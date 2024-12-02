@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Web Application Deployment Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        .step {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .challenge {
+            border-left: 4px solid #e74c3c;
+            padding-left: 15px;
+            margin: 15px 0;
+        }
+        .impact {
+            border-left: 4px solid #27ae60;
+            padding-left: 15px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Deploying a Static Web Application Using Render</h1>
+    
+    <section>
+        <h2>Introduction</h2>
+        <p>This documentation outlines the process of deploying a static web application using HTML and CSS on Render, a modern cloud service provider. The documentation covers the deployment process, architecture, challenges, and the potential impact in Kenya.</p>
+    </section>
+
+    <section>
+        <h2>Environment Setup Process</h2>
+        
+        <div class="step">
+            <h3>Step 1: Account Creation on Render</h3>
+            <ul>
+                <li>Visit Render.com and create a free account</li>
+                <li>Authenticate using GitHub or email</li>
+                <li>Optional: Set up payment details for premium features</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>Step 2: Static Website Preparation</h3>
+            <ul>
+                <li>Create website files</li>
+                <li>Test locally in browser</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>Step 3: Git Repository Setup</h3>
+            <div class="code-block">
+                <code>
+                    git init<br>
+                    git add .<br>
+                    git commit -m "Initial commit"<br>
+                    git remote add origin https://github.com/username/repository-name.git<br>
+                    git branch -M main<br>
+                    git push -u origin main
+                </code>
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Step 4: Render Deployment</h3>
+            <ol>
+                <li>Create new static site on Render</li>
+                <li>Connect GitHub repository</li>
+                <li>Configure deployment settings:
+                    <ul>
+                        <li>Branch: main</li>
+                        <li>Build Command: blank</li>
+                        <li>Publish Directory: /</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <h2>Application Architecture</h2>
+        <ul>
+            <li>Frontend: HTML and CSS</li>
+            <li>Hosting Layer: Render</li>
+            <li>Version Control: GitHub</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Challenges and Solutions</h2>
+        
+        <div class="challenge">
+            <h3>Challenge 1: Render Familiarization</h3>
+            <p><strong>Issue:</strong> Initial learning curve with Render platform</p>
+            <p><strong>Solution:</strong> Utilized official documentation and tutorials</p>
+        </div>
+
+        <div class="challenge">
+            <h3>Challenge 2: CSS Compatibility</h3>
+            <p><strong>Issue:</strong> Cross-browser styling inconsistencies</p>
+            <p><strong>Solution:</strong> Debugged using browser developer tools</p>
+        </div>
+
+        <div class="challenge">
+            <h3>Challenge 3: Deployment Configuration</h3>
+            <p><strong>Issue:</strong> Incorrect publish directory configuration</p>
+            <p><strong>Solution:</strong> Corrected directory settings and redeployed</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Impact in Kenya</h2>
+        
+        <div class="impact">
+            <h3>Digital Accessibility</h3>
+            <p>Enables small businesses to establish online presence</p>
+        </div>
+
+        <div class="impact">
+            <h3>Tourism Promotion</h3>
+            <p>Platform for showcasing Kenya's tourist attractions</p>
+        </div>
+
+        <div class="impact">
+            <h3>Skill Development</h3>
+            <p>Promotes web development skills and digital literacy</p>
+        </div>
+
+        <div class="impact">
+            <h3>Cost-Effective Solution</h3>
+            <p>Affordable hosting for startups and nonprofits</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>The deployment process using Render proved to be efficient and accessible, demonstrating the viability of cloud-based hosting for small-scale projects in Kenya. Despite initial challenges, the platform's user-friendly nature makes it an excellent choice for businesses and organizations looking to establish an online presence.</p>
+    </section>
+</body>
+</html> 
